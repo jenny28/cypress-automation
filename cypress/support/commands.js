@@ -10,7 +10,12 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('escribir', (selector, texto) => { 
+   cy.get(selector).type(texto)
+ })
+ Cypress.Commands.add('miclick', (selector) => { 
+    cy.get(selector).click()
+  })
 //
 //
 // -- This is a child command --
