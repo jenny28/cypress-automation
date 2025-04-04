@@ -1,7 +1,7 @@
 class createUser{
 
     create = {
-         menu_admin:'//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span',
+         menu_admin:':nth-child(1) > .oxd-main-menu-item',
         btn_addUser:'button[class="oxd-button oxd-button--medium oxd-button--secondary"]',
         dropdown_UserRole:'',
         txt_employeeName:'',
