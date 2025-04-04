@@ -1,9 +1,14 @@
 class createUser{
 
     create = {
-        sel_admin:'a[class="oxd-main-menu-item active"]',
-        btn_add_user:'button[class="oxd-button oxd-button--medium oxd-button--secondary"]',
-        sel_role:''
+         menu_admin:'//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span',
+        btn_addUser:'button[class="oxd-button oxd-button--medium oxd-button--secondary"]',
+        dropdown_UserRole:'',
+        txt_employeeName:'',
+        dropdown_status:'',
+        txt_username:'',
+        txt_pwd:'',
+        txt_confirmpwd:''
     }
 }
 

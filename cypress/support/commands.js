@@ -13,9 +13,9 @@
 Cypress.Commands.add('escribir', (selector, texto) => { 
    cy.get(selector).type(texto)
  })
- Cypress.Commands.add('miclick', (selector) => { 
-    cy.get(selector).click()
-  })
+//  Cypress.Commands.add('miclick', (selector) => { 
+//     cy.get(selector).click()
+//   })
 //
 //
 // -- This is a child command --
