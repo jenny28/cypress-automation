@@ -11,10 +11,10 @@
 //
 // -- This is a parent command --
 Cypress.Commands.add('escribir', (selector, texto) => { 
-   cy.get(selector).type(texto)
+   cy.get(selector).type(texto);
  })
 Cypress.Commands.add('miclick', (selector) => { 
-      cy.get(selector).click()
+      cy.get(selector).click();
  })
 //
 //
