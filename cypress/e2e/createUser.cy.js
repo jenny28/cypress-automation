@@ -41,7 +41,7 @@ describe('Modificación usuario', () => {
        cy.escribir(createUser.create.txt_confirmpwd,data.password)
        cy.miclick(createUser.create.btn_createUser)
       // Aserción
-       cy.get('.oxd-toast').contains('Success')
+       cy.get('.oxd-toast').contains('Exitoso')
        cy.escribir(createUser.create.txt_searchUsername,data.username)
        cy.miclick(createUser.create.btn_search)
       })
