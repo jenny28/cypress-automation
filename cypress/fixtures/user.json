@@ -1,0 +1,17 @@
+[
+{
+  "userole":"ESS",
+  "employeeName":"Jobin Sam",
+  "status":"Enabled",
+  "username": "A61866545679",
+  "password": "admin123"
+},
+{
+  "userole":"Admin",
+  "employeeName":"Jobin Sam",
+  "status":"Enabled",
+  "username": "A62682545679",
+  "password": "admin123"
+}
+]
+

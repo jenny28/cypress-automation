@@ -1,0 +1,17 @@
+{
+  "name": "orangeautomationproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test1": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.2.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
