@@ -22,11 +22,9 @@ describe('Modificación usuario', () => {
     cy.miclick(createUser.create.menu_admin)
 
     midata.forEach((data) =>{
-
        // Click button Add
        cy.miclick(createUser.create.btn_addUser)
        // select user role
-       //cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input').type(data.userole)
        cy.escribir(createUser.create.dropdown_UserRole,data.userole)
        cy.miclick(createUser.create.clic_UserRole)
        // Write Employee Name
@@ -44,6 +42,8 @@ describe('Modificación usuario', () => {
        cy.miclick(createUser.create.btn_createUser)
       // Aserción
        cy.get('.oxd-toast').contains('Success')
+       cy.escribir(createUser.create.txt_searchUsername,data.username)
+       cy.miclick(createUser.create.btn_search)
       })
   })
 })
