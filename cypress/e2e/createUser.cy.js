@@ -41,9 +41,15 @@ describe('Modificación usuario', () => {
        cy.escribir(createUser.create.txt_confirmpwd,data.password)
        cy.miclick(createUser.create.btn_createUser)
       // Aserción
-       cy.get('.oxd-toast').contains('Exitoso')
+       cy.get('.oxd-toast').contains('Success')
+       cy.wait(4000)
+       //cy.get(':nth-child(2) > .oxd-input').eq(0).type(data.username)
        cy.escribir(createUser.create.txt_searchUsername,data.username)
        cy.miclick(createUser.create.btn_search)
+       // Aserción : que solo se muestre en la búsqueda un solo resultado
+       cy.get('.orangehrm-horizontal-padding > .oxd-text').should('have.text','(1) Record Found')
+       // Aserción : que se muestre en el listado el usuario creado
+       cy.get('.oxd-table-card > .oxd-table-row > :nth-child(2) > div').should('have.text',data.username)
       })
   })
 })
